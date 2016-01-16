@@ -9,6 +9,7 @@ var {
   AppRegistry,
   StyleSheet,
   Text,
+  Image,
   View,
 } = React;
 
@@ -17,11 +18,10 @@ var AwesomeProject = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          React-Native入门学习
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
+        <Image style={styles.pic} source={{uri:'https://avatars3.githubusercontent.com/u/6133685?v=3&s=460'}}>
+		</Image>
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
@@ -37,10 +37,15 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+  pic:{
+	width:100,
+	height:100,
+  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+	color:'red',
   },
   instructions: {
     textAlign: 'center',
